@@ -1,0 +1,57 @@
+// Grid Areas
+.header {grid-area: header;}
+.design {grid-area: design;}
+.advance {grid-area: advance;}
+.card1 {grid-area: card1;}
+.card2 {grid-area: card2;}
+.card3 {grid-area: card3;}
+.welcome {grid-area: welcome;}
+.suscribe {grid-area: suscribe;}
+.footer {grid-area: footer;}
+
+
+    // contenido para la version movil
+@include mobil {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "design"
+            "advance"
+            "card1"
+            "card2"
+            "card3"
+            "welcome"
+            "suscribe"
+            "footer";
+    }
+}
+    // contenido de tablet
+
+@include tablet {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header"
+            "design  advance"
+            "card1 card2"
+            "card3 suscribe"
+            "welcome welcome"
+            "footer footer";
+    }
+}
+    // contenido de tablet
+    @include pc{
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header"
+            "design  advance   advance"
+            "card1  card2  card3"
+            "welcome  welcome suscribe"
+            "footer footer footer";    
+    }
+}

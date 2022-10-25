@@ -1,0 +1,35 @@
+
+    .advance {
+        display: flex;
+        height: 400px;
+        padding: 14px;
+        flex-direction: column;
+        background-color: #fff;
+        
+
+        .advance-h2 {
+            font-size: 4rem;
+
+        }
+
+        .title {
+            font-size: 1.7rem;
+            line-height: 2rem;
+        }
+
+        .description {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .advance-btn {
+          align-self: flex-end;
+          padding: 5px;
+            a {
+                text-decoration: none;
+                color: $gray-04;
+
+            }
+        }
+    }
+

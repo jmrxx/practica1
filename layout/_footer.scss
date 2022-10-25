@@ -1,0 +1,31 @@
+.footer{
+
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+
+        .menu {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            .menu_li {
+                padding: 20px;
+                list-style: none;
+    
+                .menu_li_a {
+                    color: $black;
+                    padding: 5px 10px;
+                    text-decoration: none;
+    
+                    &:hover {
+                        border-radius: 5%;
+                    }
+                }
+    
+            }
+        }
+    }
+
+}
+

@@ -1,0 +1,70 @@
+// Estilos generales
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:#ededed;
+}
+
+.main {
+    width: 100%;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+
+.design {
+    background-image: url("/public/media/Content\ Slider.png");
+    background-repeat: no-repeat;
+    background-color: $white;
+}
+
+
+
+
+
+
+
+    // .container{
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+
+    .design, .advance, .card1, .card2, .card3, .welcome, .suscribe, .footer{
+        width: 90%;
+    }
+
+    .design {
+        width: 90%;
+        height: 420px;
+        background-size: cover;
+        border-radius: 8px;
+        filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
+        background-color: #fff;
+        // background-size: cover;
+    }
+
+    .card2 {
+        width: 90%;
+        padding: 20px;
+        background-color: $white;
+
+
+    }
+
+    .card3 {
+        width: 90%;
+        height: 200px;
+        background-color: $white;
+        padding: 20px;
+
+    }
+
+
+  
