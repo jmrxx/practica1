@@ -1,4 +1,4 @@
-// Grid Areas
+// Grid Area _homePage
 .header {grid-area: header;}
 .design {grid-area: design;}
 .advance {grid-area: advance;}
@@ -10,11 +10,15 @@
 .footer {grid-area: footer;}
 
 
-// grid areas de las cards
+// grid areas _homePage de las cards
 .title{grid-area: title;}
 .meta{grid-area: meta;}
 .description{grid-area: description;}
 
+
+// grid areas aboutPage
+#about{grid-area: about;}
+#sidebar{grid-area: sidebar;}
 
 
 // template cards
@@ -24,6 +28,15 @@
     grid-template-areas: 
         "title title"
         "meta description";
+}
+
+
+// templaete page about
+.aboutPage{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "about sidebar";
 }
 
 
