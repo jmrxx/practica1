@@ -10,6 +10,25 @@
 .footer {grid-area: footer;}
 
 
+// grid areas de las cards
+.title{grid-area: title;}
+.meta{grid-area: meta;}
+.description{grid-area: description;}
+
+
+
+// template cards
+.card {
+    grid-template-columns: 80px  1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title title"
+        "meta description";
+}
+
+
+
+
     // contenido para la version movil
 @include mobil {
     .container {

@@ -52,19 +52,88 @@
 
     .card2 {
         width: 90%;
-        padding: 20px;
-        background-color: $white;
-
-
     }
 
     .card3 {
         width: 90%;
         height: 200px;
-        background-color: $white;
-        padding: 20px;
+   
+    }
 
+// cards general
+.card {
+    // card
+    // width: 425px;
+    height: 260px;
+    border-radius: 6px;
+    filter: drop-shadow(1px 1.732px 1.5px rgba(197,196,196,0.47));
+    background-color: #ffffff;
+    border: 1px solid #e1e0e0;
+    display: grid;
+    margin: 1rem auto;
+    line-height: 1.4;
+    box-shadow: 0 3px 7px -1px rgba(#000, .1);
+    overflow: hidden;
+    grid-template-columns: 80px  1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title title"
+        "meta description";
+
+
+    .title{
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(0deg, #eaeaea 0%, #eeeeee 100%);
+        
+        h1{
+            font-size: 1.5rem;
+            margin-left: 10px;
+            margin-bottom: 0px;
+            color:  $gray-03;
+        }
+        hr{
+          border: 2px solid $gray-05;
+        }
+    }
+
+    .meta {
+      width: 100px;
+      height: 200px;
+    }
+    .img {
+      height: 150px;
+      background-image: url("/public/media/solution_icon.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
 
-  
+    .description {
+      margin-left: 20px;
+      padding: 1rem;
+
+      h2 {
+        font-size: 1rem;
+        text-transform: capitalize;
+        color: $gray-07;
+      }
+      p{
+       color: $gray-07;
+
+
+       .tecnology{
+        border-bottom: 1px solid $gray-03;
+        color: $gray-03;
+       }
+      }
+      .read-more {
+        text-align: right;
+        a {
+          text-decoration: none;
+          font-size: 0.8rem;
+        }
+      }
+    }
+}
