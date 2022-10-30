@@ -1,139 +1,253 @@
 // Estilos generales
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color:#ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $gray-09;
 }
 
 .main {
-    width: 100%;
+  width: 100%;
 }
 
 .text-orange {
-    color: $orange;
+  color: $orange;
 }
 
+.design,
+.advance,
+.card1,
+.card2,
+.card3,
+.welcome,
+.suscribe,
+.footer {
+  width: 90%;
+}
 
+// Estilos section design
 .design {
-    background-image: url("/public/media/Content\ Slider.png");
-    background-repeat: no-repeat;
-    background-color: $white;
+  width: 90%;
+  height: 420px;
+  border-radius: 8px;
+  filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
+  background-image: url("/public/media/Content\ Slider.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $white;
+  background-size: cover;
+  overflow: hidden;
+}
+
+// Estilos section advance
+.advance {
+  display: flex;
+  height: 400px;
+  padding: 14px;
+  border-radius: 6px;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+
+
+  .advance-h2 {
+    font-size: 4rem;
+
+  }
+
+  .title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .advance-btn {
+    align-self: flex-end;
+    padding: 5px;
+
+    a {
+      text-decoration: none;
+      color: $gray-04;
+
+    }
+  }
 }
 
 
-
-
-
-
-
-    // .container{
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
-
-    .design, .advance, .card1, .card2, .card3, .welcome, .suscribe, .footer{
-        width: 90%;
-    }
-
-    .design {
-        width: 90%;
-        height: 420px;
-        background-size: cover;
-        border-radius: 8px;
-        filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
-        background-color: #fff;
-        // background-size: cover;
-    }
-
-    .card2 {
-        width: 90%;
-    }
-
-    .card3 {
-        width: 90%;
-        height: 200px;
-   
-    }
 
 // cards general
 .card {
-    // card
-    // width: 425px;
-    height: 260px;
-    border-radius: 6px;
-    filter: drop-shadow(1px 1.732px 1.5px rgba(197,196,196,0.47));
-    background-color: #ffffff;
-    border: 1px solid #e1e0e0;
-    display: grid;
-    margin: 1rem auto;
-    line-height: 1.4;
-    box-shadow: 0 3px 7px -1px rgba(#000, .1);
-    overflow: hidden;
-    grid-template-columns: 80px  1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "title title"
-        "meta description";
+  // width: 425px;
+  height: 250px;
+  border-radius: 6px;
+  filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+  background-color: $white;
+  border: 1px solid #e1e0e0;
+  display: grid;
+  margin: 1rem auto;
+  line-height: 1.4;
+  box-shadow: 0 3px 7px -1px rgba($black, .1);
+  overflow: hidden;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title"
+    "meta description";
 
 
-    .title{
-        width: 100%;
-        height: 60px;
-        background-image: linear-gradient(0deg, #eaeaea 0%, #eeeeee 100%);
-        
-        h1{
-            font-size: 1.5rem;
-            margin-left: 10px;
-            margin-bottom: 0px;
-            color:  $gray-03;
-        }
-        hr{
-          border: 2px solid $gray-05;
-        }
+  .title {
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(0deg, #eaeaea 0%, #eeeeee 100%);
+
+    h2 {
+      font-size: 1.5rem;
+      margin-left: 10px;
+      margin-bottom: 0px;
+      color: $gray-04;
     }
 
-    .meta {
-      width: 100px;
-      height: 200px;
+    hr {
+      border: 1px solid $gray-05;
     }
-    .img {
-      height: 150px;
-      background-image: url("/public/media/solution_icon.svg");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
+  }
+
+  .meta {
+    width: 100px;
+    height: 200px;
+  }
+
+  .img {
+    height: 150px;
+    background-image: url("/public/media/solution_icon.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .description {
+    margin-left: 20px;
+    padding: 1rem;
+
+    h3 {
+      font-size: 1rem;
+      text-transform: capitalize;
+      color: $gray-07;
     }
 
-
-    .description {
-      margin-left: 20px;
-      padding: 1rem;
-
-      h2 {
-        font-size: 1rem;
-        text-transform: capitalize;
-        color: $gray-07;
-      }
-      p{
-       color: $gray-07;
+    p {
+      color: $gray-07;
 
 
-       .tecnology{
+      .tecnology {
         border-bottom: 1px solid $gray-03;
         color: $gray-03;
-       }
       }
-      .read-more {
-        text-align: right;
-        a {
-          text-decoration: none;
-          font-size: 0.8rem;
+    }
+
+    .read-more {
+      padding: 10px;
+      text-align: right;
+
+      a {
+        text-decoration: none;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+// welcome to  infothech
+
+.welcome {
+  font-family: $century;
+
+  h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+  }
+
+  p {
+      font-size: 12px;
+      line-height: 18px;
+      color: $gray-07;
+      font-family: $arial;
+      margin-bottom: 10px;
+  }
+
+}
+
+
+
+/* Home version mobil */
+
+@include mobil {
+
+  // navbar
+  .nav {
+    .navbar {
+      #logo {
+        font-size: 1.5rem;
+      }
+
+      #btn {
+        .icon-menu {
+          font-size: 1.5rem;
         }
       }
     }
+  }
+
+  // desing
+  .design {
+    height: 160px;
+  }
+
+  // advance
+  .advance {
+    height: 280px;
+
+    .advance-h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+
+    .advance-btn {
+      font-size: 0.6rem;
+      padding: 10px;
+    }
+  }
+
+  // cards
+  .card {
+    height: 230px;
+
+    .title {
+      height: 40px;
+
+      h2 {
+        font-size: 1.7rem;
+        margin-bottom: -4px;
+      }
+    }
+  }
+
 }
