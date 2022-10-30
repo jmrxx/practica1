@@ -37,10 +37,9 @@
 .suscribe {
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
 
     h2 {
-        margin-bottom: 10px;
+        margin: 10px 0px 10px;
         font-size: 19px;
         color: $orange;
         font-family: $century;
@@ -76,7 +75,6 @@
 
     .iconos {
         display: flex;
-        padding-bottom: 20px;
         gap: 20px;
     }
 }

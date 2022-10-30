@@ -10,15 +10,23 @@
             flex-direction: column;
 
             .menu_li {
+                width: 79px;
+                height: 27px;
+
                 .menu_li_a {
-                    font-size: 12px;
+                    font-size: 11px;
                     line-height: 18px;
                     color: $gray-06;
                     font-family: $arial;
                     text-decoration: none;
+                    margin-bottom: 20px;
+                    border-radius: 2px;
 
                     &:hover {
-                        border-radius: 5%;
+                        background-image: linear-gradient(0deg, #ef9f46 0%, #f3ab5b 50%, #f4cfa7 100%);
+                        border: 1px solid #675f55;
+                        padding: 8px 12px;
+                        color: $white;
                     }
                 }
 
@@ -28,6 +36,7 @@
 
     .footer-copy {
         p {
+            margin: 1rem 0rem 2rem 0rem;
             font-size: 12px;
             line-height: 18px;
             color: #9a9b9c;
