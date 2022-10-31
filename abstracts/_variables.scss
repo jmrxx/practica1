@@ -2,6 +2,7 @@
 $black :#000;
 $orange: #ec8a1b;
 $white: #fff;
+$gray-00: #e0e1e1;
 $gray-01: #bcbcbc;
 $gray-02: #615c5c;
 $gray-03: #e5e5e5;
@@ -11,10 +12,11 @@ $gray-06: #666666;
 $gray-07: #9a9b9c;
 $gray-08: #c6c6c6;
 $gray-09: #ededed;
+$gray-10: #787878;
+$gray-11:#666565;
 
 // fonts
-$arial : 'Arial',
-sans-serif;
+$arial : 'Arial',sans-serif;
 $century: 'Century Gothic';
 
 
@@ -22,5 +24,4 @@ $century: 'Century Gothic';
 
 // media Queries
 $mobil: "768px";
-$tablet: "1024px";
 $pc: "1200px";

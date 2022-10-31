@@ -23,10 +23,7 @@
                     border-radius: 2px;
 
                     &:hover {
-                        background-image: linear-gradient(0deg, #ef9f46 0%, #f3ab5b 50%, #f4cfa7 100%);
-                        border: 1px solid #675f55;
-                        padding: 8px 12px;
-                        color: $white;
+                        color: $black;
                     }
                 }
 
@@ -39,8 +36,90 @@
             margin: 1rem 0rem 2rem 0rem;
             font-size: 12px;
             line-height: 18px;
-            color: #9a9b9c;
+            color: $gray-06;
             font-family: $arial;
+        }
+    }
+
+}
+
+/* version tablet */
+
+@include tablet {
+    .footer {
+
+        .main-footer {
+            flex-direction: row;
+            justify-content: space-between;
+            border-top: 1px solid $gray-06;
+
+            .menu {
+                flex-direction: row;
+
+                .menu_li {
+                    width: 65px;
+                    font-size: 12px;
+
+                    .menu_li_a {
+                        padding-right: 10px;
+                        border-radius: 0px;
+                        border-right: 1px solid $gray-06;
+
+                    }
+
+                }
+
+                .menu_li_a.last_boder {
+                    border-right: none;
+                }
+
+            }
+
+            .footer-copy {
+                p {
+                    flex: 2;
+                }
+            }
+        }
+    }
+
+}
+
+@include pc {
+    .footer {
+
+        .main-footer {
+            flex-direction: row;
+            justify-content: space-between;
+            border-top: 1px solid $gray-06;
+
+            .menu {
+                flex-direction: row;
+
+                .menu_li {
+                    width: 65px;
+                    font-size: 12px;
+
+                    .menu_li_a {
+                        padding-right: 10px;
+                        border-radius: 0px;
+                        border-right: 1px solid $gray-06;
+
+                    }
+
+                }
+
+                .menu_li_a.last_boder {
+                    border-right: none;
+                }
+
+            }
+
+            .footer-copy {
+                p {
+                    flex: 2;
+                }
+            }
         }
     }
 

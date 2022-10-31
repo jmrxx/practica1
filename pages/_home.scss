@@ -21,17 +21,6 @@ body {
   color: $orange;
 }
 
-// .design,
-// .advance,
-// .card1,
-// .card2,
-// .card3,
-// .welcome,
-// .suscribe,
-// .footer {
-//   width: 90%;
-// }
-
 // Estilos section design
 .design {
   // width: 90%;
@@ -48,8 +37,9 @@ body {
 
 // Estilos section advance
 .advance {
+  border-bottom: 1px solid $gray-00;
   display: flex;
-  height: 400px;
+  // height: 400px;
   padding: 14px;
   border-radius: 6px;
   flex-direction: column;
@@ -99,16 +89,10 @@ body {
   line-height: 1.4;
   box-shadow: 0 3px 7px -1px rgba($black, .1);
   overflow: hidden;
-  grid-template-columns: 80px 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "title title"
-    "meta description";
 
 
   .title {
     width: 100%;
-    height: 60px;
     background-image: linear-gradient(0deg, #eaeaea 0%, #eeeeee 100%);
 
     h2 {
@@ -119,7 +103,8 @@ body {
     }
 
     hr {
-      border: 1px solid $gray-05;
+      margin: 0px;
+      border: 1px solid $gray-00;
     }
   }
 
@@ -197,12 +182,12 @@ body {
   .nav {
     .navbar {
       #logo {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
 
       #btn {
         .icon-menu {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
       }
     }
@@ -215,9 +200,10 @@ body {
 
   // advance
   .advance {
-    height: 280px;
+    // height: 320px;
 
     .advance-h1 {
+      border-bottom: 1px solid $gray-00;
       font-size: 2rem;
       margin-bottom: 10px;
     }
@@ -234,22 +220,73 @@ body {
     }
 
     .advance-btn {
-      font-size: 0.6rem;
-      padding: 10px;
+      font-size: 12px;
+      color: $gray-10;
+      font-family: $arial;
+
     }
   }
 
-  // cards
+  // cards mobil
   .card {
-    height: 230px;
+    height: 186px;
+    border-radius: 6px;
+    filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+    background-color: $white;
+    border: 1px solid #e1e0e0;
 
     .title {
-      height: 40px;
-
       h2 {
-        font-size: 1.7rem;
-        margin-bottom: -4px;
+        margin-top: 10px;
+        font-size: 20px;
+        color: $gray-04;
+        font-family: $century;
       }
+
+      hr {
+        border: 1px solid #e0e1e1;
+        position: relative;
+        top: 10%;
+      }
+    }
+
+    .meta {
+      width: 50px;
+      height: 60px;
+      padding-left: 7px;
+    }
+
+    .img {
+      width: 80px;
+      height: 100px;
+    }
+
+    .description {
+      h3 {
+        font-size: 13px;
+        color: $gray-11;
+        font-weight: bold;
+        font-family: $arial;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 18px;
+        color: #9a9b9c;
+        font-family: $arial;
+      }
+
+      .read-more {
+        padding: 10px 0px 0px 0px;
+      }
+    }
+  }
+
+
+  .welcome {
+    h2 {
+      padding-bottom: 5px;
+      border-bottom: 1px solid $gray-00;
     }
   }
 
@@ -259,7 +296,7 @@ body {
 
 @include tablet {
   .container {
-    gap: 20px;
+    // gap: 20px;
 
     .header {
       .nav {
@@ -284,15 +321,243 @@ body {
 
     }
 
+    .design {
+      height: 300px;
+      background-size: 940px 420px cover;
+    }
+
+    .advance {
+      height: 300px;
+
+      .advance-h1 {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $gray-00;
+        font-size: 27px;
+        line-height: 28px;
+      }
+
+      .title {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        border-bottom: 1px solid $gray-00;
+        color: #bcbcbc;
+      }
+
+      .description {
+        font-size: 12px;
+        padding-top: 10px;
+        line-height: 20px;
+        color: #9a9b9c;
+        font-family: $arial;
+      }
+    }
+
+    .card1 {
+      margin-right: 10px;
+    }
+
+    .card2 {
+      margin-left: 10px;
+    }
+
+    .card3 {
+      margin-right: 10px;
+    }
+
+
+
     .card {
+      height: 186px;
+      border-radius: 6px;
+      filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+      background-color: $white;
+      border: 1px solid #e1e0e0;
+
       .title {
         h2 {
-          font-size: 2rem;
-          margin-bottom: 18px;
+          margin-top: 10px;
+          font-size: 20px;
+          color: $gray-04;
+          font-family: $century;
+        }
 
+        hr {
+          border: 1px solid #e0e1e1;
+          position: relative;
+          top: 10px;
         }
       }
 
+      .meta {
+        width: 50px;
+        height: 60px;
+        padding-left: 7px;
+      }
+
+      .img {
+        width: 80px;
+        height: 100px;
+      }
+
+      .description {
+        h3 {
+          font-size: 13px;
+          color: $gray-11;
+          font-weight: bold;
+          font-family: $arial;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 18px;
+          color: #9a9b9c;
+          font-family: $arial;
+        }
+
+        .read-more {
+          padding: 10px 0px 0px 0px;
+        }
+      }
+    }
+
+    .welcome {
+      height: 200px;
+      margin-bottom: 20px;
     }
   }
+}
+
+
+/* Version pc */
+
+@include pc {
+  .container {
+    width: 90%;
+    display: grid;
+    background-color: $gray-09;
+  }
+
+  .design {
+    width: 79%;
+    height: 256px;
+  }
+
+  .advance {
+    height: 256px;
+    margin-left: -43%;
+
+    .advance-h1 {
+      border-bottom: 1px solid $gray-00;
+      font-size: 38px;
+      line-height: 35px;
+      color: #363d40;
+      font-family: "Century Gothic";
+      padding-bottom: 10px;
+    }
+
+    .title {
+      font-size: 14px;
+      line-height: 25px;
+      color: #bcbcbc;
+      font-family: "Century Gothic";
+      border-bottom: 1px solid $gray-00;
+      padding-bottom: 10px;
+    }
+
+    .description {
+      font-size: 12px;
+      color: #9a9b9c;
+      font-family: "Arial";
+      line-height: 20px;
+    }
+
+    .advance-btn {
+      padding-top: 25px;
+    }
+  }
+
+  .cards {
+    display: initial;
+  }
+
+  .card1 {
+    margin-right: 10px;
+
+  }
+
+  .card2 {
+    margin: 0px 5px 0px 5px;
+
+  }
+
+  .card3 {
+    margin-left: 10px;
+  }
+
+  .card {
+    height: 186px;
+    border-radius: 6px;
+    filter: drop-shadow(1px 1.732px 1.5px rgba(197, 196, 196, 0.47));
+    background-color: $white;
+    border: 1px solid #e1e0e0;
+
+    .title {
+      h2 {
+        margin-top: 10px;
+        font-size: 20px;
+        color: $gray-04;
+        font-family: $century;
+      }
+
+      hr {
+        border: 1px solid #e0e1e1;
+        position: relative;
+        top: 10px;
+      }
+    }
+
+    .meta {
+      width: 50px;
+      height: 60px;
+      padding-left: 7px;
+    }
+
+    .img {
+      width: 80px;
+      height: 100px;
+    }
+
+    .description {
+      h3 {
+        font-size: 13px;
+        color: $gray-11;
+        font-weight: bold;
+        font-family: $arial;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 18px;
+        color: #9a9b9c;
+        font-family: $arial;
+      }
+
+      .read-more {
+        padding: 10px 0px 0px 0px;
+      }
+    }
+  }
+
+
+  .welcome {
+    margin-right: 20px;
+
+    h2 {
+      padding-bottom: 5px;
+      border-bottom: 1px solid $gray-00;
+    }
+  }
+
 }

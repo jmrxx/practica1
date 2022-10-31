@@ -40,7 +40,9 @@
 
     h2 {
         margin: 10px 0px 10px;
-        font-size: 19px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $gray-00;
+        font-size: 22px;
         color: $orange;
         font-family: $century;
     }
@@ -69,6 +71,8 @@
     h3 {
         font-size: 19px;
         margin-bottom: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $gray-00;
         color: $orange;
         font-family: $century;
     }
@@ -79,6 +83,19 @@
     }
 }
 
-/* Version mobil*/
+/* Version tablet*/
 
-@include mobil {}
+@include tablet {
+    .suscribe {
+        margin-left: 10px;
+    }
+}
+
+@include pc {
+    .suscribe {
+        margin-left: 10px;
+        .follow {
+            height: 125px;
+        }
+    }
+}
