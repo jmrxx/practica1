@@ -14,14 +14,17 @@ $gray-08: #c6c6c6;
 $gray-09: #ededed;
 $gray-10: #787878;
 $gray-11:#666565;
+$gray-12:#eeefef;
+$gray-13:#dddddd;
 
 // fonts
 $arial : 'Arial',sans-serif;
 $century: 'Century Gothic';
 
-
-
-
 // media Queries
 $mobil: "768px";
 $pc: "1200px";
+
+// color gradients
+$color-gradient: "linear-gradient(0deg, #ef9f46 0%, #f3ab5b 50%, #f4cfa7 100%)";
+$color-border: #675f55;

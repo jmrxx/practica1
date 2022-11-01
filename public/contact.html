@@ -1,69 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-</head>
-<body>
-    <header></header>
-    <main>
-        <section>
-            <h1>Contact Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar nisi eu enim facilisis dapibus. 
-                Duis viverra turpis vitae dui tincidunt eleifend. Etiam sodales, neque in dignissim dictum, dui libero 
-                dictum orci, vel cursus felis velit vitae dui.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Clients Page</title>
+    <link rel="stylesheet" href="/public/css/main.css" />
+  </head>
 
-                <article>
-                    <form action="#">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
-
-                        <label for="email">Email-ID</label>
-                        <input type="text" name="email" id="email">
-
-
-                        <label for="company">Company Name</label>
-                        <input type="text" name="company" id="company">
-
-                        <label for="email">Email-ID</label>
-                        <input type="text" name="email" id="email">
-
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject">
-
-                        <label for="message">Message</label>
-                        <input type="text" name="message" id="message">
-
-                        <input type="submit" value="Submit">
-                    </form>
-                </article>
+  <body>
+    <div class="container-contact">
+      <header class="header">
+        <!-- navbar  -->
+        <nav class="nav">
+          <div class="navbar">
+            <a href="index.html" id="logo"
+              >INF<span class="text-orange">O</span>TECH</a
+            >
+            <div id="btn">
+              <i class="icon-menu"></i>
+            </div>
+          </div>
+          <ul class="menu">
+            <li class="menu_li">
+              <a class="menu_li_a" href="index.html">Home</a>
+            </li>
+            <li class="menu_li">
+              <a class="menu_li_a" href="about.html">About us</a>
+            </li>
+            <li class="menu_li">
+              <a class="menu_li_a" href="">solutions</a>
+            </li>
+            <li class="menu_li">
+              <a class="menu_li_a" href="clients.html">clients</a>
+            </li>
+            <li class="menu_li">
+              <a class="menu_li_a current" href="contact.html">contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <section id="title" class="article">
+          <div class="img"></div>
+          <h1>contact</h1>
         </section>
 
-    </main>
-    <aside>
-        <h1>Get in Touch</h1>
+        <section id="contact-text" class="article">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+            pulvinar nisi eu enim facilisis dapibus. Duis viverra turpis vitae
+            dui tincidunt eleifend. Etiam sodales, neque in dignissim dictum,
+            dui libero dictum orci, vel cursus felis velit vitae dui.
+          </p>
+        </section>
+        <section id="form" class="article">
+          <form action="#" id="form1">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <label for="email">Email-ID</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div>
+              <label for="company">Company Name</label>
+              <input type="text" name="company" id="company" />
+            </div>
+            <div>
+              <label for="email">Email-ID</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject" />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <div>
+              <input class="btn" type="submit" value="Submit" />
+            </div>
+          </form>
+        </section>
+      </main>
+      <aside class="sidebar">
+        <h2>Get in Touch</h2>
 
         <ul>
-            <li>9839 Lorem Ipsum</li>
-            <li>India, Bangalore</li>
-            <li>Asia, indiA</li>
-            <li>Telephone: +91 - 1234567890</li>
-            <li>Email: contact@design3edge.com</li>
+          <li>9839 Lorem Ipsum</li>
+          <li>India, Bangalore</li>
+          <li>Asia, indiA</li>
+          <li>Telephone: +91 - 1234567890</li>
+          <li>Email: contact@design3edge.com</li>
         </ul>
 
-        <section>
-            <h2>Testimonial</h2>
-            <p>Talk to us if you are looking for business savvy 
-                online solutions rather than possibilities of 
-                technology. </p>
+        <article class="follow">
+          <h3 class="text-orange">Follow us on</h3>
+          <div class="iconos">
+            <div class="icon"><i class="icon-tumblr2"></i></div>
+            <div class="icon"><i class="icon-facebook2"></i></div>
+            <div class="icon"><i class="icon-linkedin"></i></div>
+          </div>
+        </article>
 
-                <h3>- Design3edge.com</h3>
-        </section>
+        <article class="testimonial">
+          <h2>Testimonial</h2>
+          <p>
+            Talk to us if you are looking for business savvy online solutions
+            rather than possibilities of technology.
+          </p>
+          <h3>-Design3edge.com</h3>
+        </article>
+      </aside>
+      <footer class="footer">
+        <div class="main-footer">
+          <ul class="menu">
+            <li class="menu_li">
+              <a class="menu_li_a" href="index.html">Home</a>
+            </li>
+            <li class="menu_li">
+              <a class="menu_li_a" href="about.html">About us</a>
+            </li>
+            <li class="menu_li">
+              <a class="menu_li_a" href="#solutions">solutions</a>
+            </li>
+            <li class="menu_li">
+              <a class="menu_li_a" href="clients.html">clients</a>
+            </li>
+            <li class="menu_li">
+              <a class="menu_li_a last_boder" href="contact.html">contact us</a>
+            </li>
+          </ul>
 
-    </aside>
-        
-    <footer></footer>
-</body>
+          <div class="footer-copy">
+            <p>
+              &copy;Copyright Your
+              <span class="text-orange"> Site Name. Dot Com.</span>All Right
+              Reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="/public/js/menu.js"></script>
 </html>

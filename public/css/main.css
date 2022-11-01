@@ -142,7 +142,13 @@ table {
   padding: 8px 12px;
   border-radius: 2px;
 }
-.nav .menu .menu_li .menu_li_a:hover, .nav .menu .menu_li .menu_li_a:active {
+.nav .menu .menu_li .menu_li_a:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ef9f46), color-stop(50%, #f3ab5b), to(#f4cfa7));
+  background-image: linear-gradient(0deg, #ef9f46 0%, #f3ab5b 50%, #f4cfa7 100%);
+  border: 1px solid #675f55;
+  color: #fff;
+}
+.nav .current {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ef9f46), color-stop(50%, #f3ab5b), to(#f4cfa7));
   background-image: linear-gradient(0deg, #ef9f46 0%, #f3ab5b 50%, #f4cfa7 100%);
   border: 1px solid #675f55;
@@ -259,12 +265,30 @@ table {
   grid-area: description;
 }
 
-#about {
-  grid-area: about;
+/* Grid contact Page */
+.content {
+  grid-area: main;
 }
 
-#sidebar {
+.sidebar {
   grid-area: sidebar;
+}
+
+/* grid area de clients page*/
+#section1 {
+  grid-area: section1;
+}
+
+#section2 {
+  grid-area: section2;
+}
+
+#section3 {
+  grid-area: section3;
+}
+
+#section4 {
+  grid-area: section4;
 }
 
 .card {
@@ -273,17 +297,21 @@ table {
   grid-template-areas: "title title" "meta description";
 }
 
-.aboutPage {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "about sidebar";
-}
-
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "header" "design" "advance" "card1" "card2" "card3" "welcome" "suscribe" "footer";
+  }
+  /* contact page */
+  .container-contact {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header" "main" "sidebar" "footer";
+  }
+  .clients {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "section1 " "section2" "section3 " "section4";
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -292,12 +320,29 @@ table {
     grid-template-rows: auto;
     grid-template-areas: "header header" "design  advance" "card1 card2" "card3 suscribe" "welcome welcome" "footer footer";
   }
+  /* contact page */
+  .container-contact {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "header header header" "design  design   advance" "card1  card2  card3" "welcome  welcome suscribe" "footer footer footer";
+  }
+  /* contact page */
+  .container-contact {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+  }
+  /* client page */
+  .clients {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "section1 section2" "section3 section4";
   }
 }
 .header {
@@ -961,4 +1006,369 @@ body {
 .aboutPage {
   width: 100%;
   background-color: #bcbcbc;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
+}
+
+.container-contact {
+  width: 90%;
+  display: grid;
+  background-color: #ededed;
+}
+
+.content #title .img_client {
+  position: relative;
+  top: -10px;
+  top: -17px;
+  left: 6px;
+  height: 40px;
+  background-image: url("/public/media/clientPage/ClientsImage.svg");
+  background-repeat: no-repeat;
+}
+
+.clients {
+  display: grid;
+  margin: 10px;
+  width: 100%;
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+  row-gap: 2rem;
+}
+.clients .client-p {
+  width: 62%;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9a9b9c;
+  font-family: "Arial", sans-serif;
+}
+.clients h2 {
+  font-size: 12px;
+  color: #666666;
+  font-weight: bold;
+  font-family: "Century Gothic";
+}
+.clients #client1 .content-img {
+  width: 271px;
+  height: 220px;
+  border-radius: 11px;
+  background-color: #e5e6e5;
+}
+.clients #client1 .content-img .img_client1 {
+  height: 200px;
+  width: 240px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+  background-image: url("/public/media/clientPage/client1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.clients #client2 .content-img {
+  width: 271px;
+  height: 220px;
+  border-radius: 11px;
+  background-color: #e5e6e5;
+}
+.clients #client2 .content-img .img_client2 {
+  height: 200px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+  width: 240px;
+  background-image: url("/public/media/clientPage/client1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.clients #client3 .content-img {
+  width: 271px;
+  height: 220px;
+  border-radius: 11px;
+  background-color: #e5e6e5;
+}
+.clients #client3 .content-img .img_client3 {
+  height: 200px;
+  width: 240px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+  background-image: url("/public/media/clientPage/Stack.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.clients #client4 .content-img {
+  width: 271px;
+  height: 220px;
+  border-radius: 11px;
+  background-color: #e5e6e5;
+}
+.clients #client4 .content-img .img_client4 {
+  height: 200px;
+  width: 240px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+  background-image: url("/public/media/clientPage/Techiepark.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.sidebar .testimonial {
+  font-size: 12px;
+  line-height: 18px;
+  color: #9a9b9c;
+  font-family: "Arial", sans-serif;
+}
+.sidebar .testimonial h3 {
+  color: #666565;
+  padding-top: 10px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .description h2 {
+    margin: 10px 0px 10px 10px;
+  }
+  .description .client-p {
+    margin: 10px 0px 10px 10px;
+  }
+  .clients #clienti .content-img {
+    width: 95%;
+  }
+  .clients #clienti .content-img .img_clienti {
+    width: 90%;
+  }
+  .clients #clienti .content-img {
+    width: 95%;
+  }
+  .clients #clienti .content-img .img_clienti {
+    width: 90%;
+  }
+  .clients #clienti .content-img {
+    width: 95%;
+  }
+  .clients #clienti .content-img .img_clienti {
+    width: 90%;
+  }
+  .clients #clienti .content-img {
+    width: 95%;
+  }
+  .clients #clienti .content-img .img_clienti {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .description h2 {
+    margin: 10px 0px 10px 15px;
+  }
+  .description .client-p {
+    margin: 10px 0px 10px 15px;
+  }
+  .clients #client1 .content-img {
+    width: 100%;
+  }
+  .clients #client1 .content-img .img_client1 {
+    width: 93%;
+  }
+  .clients #client2 .content-img {
+    width: 100%;
+  }
+  .clients #client2 .content-img .img_client2 {
+    width: 93%;
+  }
+  .clients #client3 .content-img {
+    width: 100%;
+  }
+  .clients #client3 .content-img .img_client3 {
+    width: 93%;
+  }
+  .clients #client4 .content-img {
+    width: 100%;
+  }
+  .clients #client4 .content-img .img_client4 {
+    width: 93%;
+  }
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ededed;
+}
+
+.container-contact {
+  display: grid;
+  width: 90%;
+  gap: 1.6em;
+  background-color: #fff;
+}
+
+.header {
+  background-color: #ededed;
+}
+
+.content {
+  padding: 0px 5px 5px 0px;
+  background-color: #fff;
+}
+.content #title h1 {
+  font-size: 22px;
+  color: #ec8a1b;
+  font-family: "Century Gothic";
+  margin-top: -38px;
+  padding-left: 60px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #e0e1e1;
+}
+.content .img {
+  position: relative;
+  top: -10px;
+  background-image: url("/public/media/contactPage/contact.svg");
+  height: 40px;
+  background-repeat: no-repeat;
+}
+.content #title h1::first-letter {
+  text-transform: capitalize;
+}
+.content #contact-text p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #9a9b9c;
+  font-family: "Arial", sans-serif;
+  margin: 5px 0px 10px 10px;
+}
+.content #form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.content #form form label {
+  font-size: 12px;
+  line-height: 18px;
+  color: #9a9b9c;
+  padding: 15px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+}
+.content #form form input[type=text] {
+  width: 360px;
+  height: 26px;
+  float: right;
+  margin-right: 40%;
+  clear: both;
+  background-color: #eeefef;
+  border: 1px solid #dddddd;
+}
+.content #form form textarea {
+  width: 422px;
+  height: 92px;
+  margin-right: 33%;
+  float: right;
+  background-color: #eeefef;
+  border: 1px solid #dddddd;
+  resize: none;
+}
+.content #form form input[type=submit] {
+  margin-left: 30%;
+}
+
+.sidebar {
+  width: 90%;
+  background-color: #fff;
+  padding-left: 10px;
+}
+.sidebar h2 {
+  font-size: 19px;
+  color: #ec8a1b;
+  font-family: "Century Gothic";
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e1e1;
+}
+.sidebar ul {
+  list-style: inside;
+}
+.sidebar ul li {
+  font-size: 12px;
+  line-height: 18px;
+  color: #666565;
+  font-family: "Arial", sans-serif;
+}
+.sidebar ul li::marker {
+  color: #ec8a1b;
+}
+.sidebar .testimonial {
+  font-size: 12px;
+  line-height: 18px;
+  color: #9a9b9c;
+  font-family: "Arial", sans-serif;
+}
+.sidebar .testimonial h3 {
+  color: #666565;
+  padding-top: 10px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+}
+
+.footer {
+  padding: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .content #form form input[type=text] {
+    width: 180px;
+    margin-right: 5%;
+  }
+  .content #form form textarea {
+    width: 200px;
+    margin-right: 0%;
+  }
+  .content #form form input[type=submit] {
+    margin-left: 42%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .content #form form input[type=text] {
+    width: 180px;
+    margin-right: 30%;
+  }
+  .content #form form textarea {
+    width: 200px;
+    margin-right: 27%;
+  }
+  .content #form form input[type=submit] {
+    margin-left: 35%;
+  }
 }

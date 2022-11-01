@@ -1,48 +1,99 @@
 // Grid Area _homePage
 .header {grid-area: header;}
-.design {grid-area: design;}
-.advance {grid-area: advance;}
-.card1 {grid-area: card1;}
-.card2 {grid-area: card2;}
-.card3 {grid-area: card3;}
-.welcome {grid-area: welcome;}
-.suscribe {grid-area: suscribe;}
-.footer {grid-area: footer;}
+
+.design {
+    grid-area: design;
+}
+
+.advance {
+    grid-area: advance;
+}
+
+.card1 {
+    grid-area: card1;
+}
+
+.card2 {
+    grid-area: card2;
+}
+
+.card3 {
+    grid-area: card3;
+}
+
+.welcome {
+    grid-area: welcome;
+}
+
+.suscribe {
+    grid-area: suscribe;
+}
+
+.footer {
+    grid-area: footer;
+}
 
 
 // grid areas _homePage de las cards
-.title{grid-area: title;}
-.meta{grid-area: meta;}
-.description{grid-area: description;}
+.title {
+    grid-area: title;
+}
+
+.meta {
+    grid-area: meta;
+}
+
+.description {
+    grid-area: description;
+}
 
 
-// grid areas aboutPage
-#about{grid-area: about;}
-#sidebar{grid-area: sidebar;}
+/* Grid contact Page */
+
+.content {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+
+/* grid area de clients page*/
+
+#section1 {
+    grid-area: section1;
+}
+
+#section2 {
+    grid-area: section2;
+}
+
+#section3 {
+    grid-area: section3;
+}
+
+#section4 {
+    grid-area: section4;
+}
 
 
 // template cards
 .card {
-    grid-template-columns: 80px  1fr;
+    grid-template-columns: 80px 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "title title"
         "meta description";
 }
 
 
-// templaete page about
-.aboutPage{
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "about sidebar";
-}
 
 
 
 
-    // contenido para la version movil
+
+// contenido para la version movil
 @include mobil {
     .container {
         grid-template-columns: 1fr;
@@ -58,8 +109,32 @@
             "suscribe"
             "footer";
     }
+
+
+    /* contact page */
+    .container-contact {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+
+
+    .clients {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "section1 "
+            "section2"
+            "section3 "
+            "section4";
+    }
+
 }
-    // contenido de tablet
+
+// contenido de tablet
 
 @include tablet {
     .container {
@@ -73,9 +148,21 @@
             "welcome welcome"
             "footer footer";
     }
+
+    /* contact page */
+    .container-contact {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header"
+            "main main sidebar"
+            "footer footer footer";
+    }
+
 }
-    // contenido de tablet
-    @include pc{
+
+// contenido de tablet
+@include pc {
     .container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -84,6 +171,25 @@
             "design  design   advance"
             "card1  card2  card3"
             "welcome  welcome suscribe"
-            "footer footer footer";    
+            "footer footer footer";
     }
+
+    /* contact page */
+    .container-contact {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header"
+            "main main sidebar"
+            "footer footer footer";
+    }
+
+/* client page */
+    .clients {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "section1 section2"
+            "section3 section4";
+    }
+
 }
