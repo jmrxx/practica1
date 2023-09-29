@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Clients Page</title>
-    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
-    <div class="container-contact">
+    <div class="container-2">
       <header class="header">
         <!-- navbar  -->
         <nav class="nav">
@@ -21,21 +21,21 @@
               <i class="icon-menu"></i>
             </div>
           </div>
-          <ul class="menu">
+          <ul id="menu" class="ul">
             <li class="menu_li">
-              <a class="menu_li_a" href="index.html">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li class="menu_li">
-              <a class="menu_li_a" href="about.html">About us</a>
+              <a href="">About us</a>
             </li>
             <li class="menu_li">
-              <a class="menu_li_a" href="">solutions</a>
+              <a href="">solutions</a>
             </li>
             <li class="menu_li">
-              <a class="menu_li_a" href="clients.html">clients</a>
+              <a href="clients.html">clients</a>
             </li>
             <li class="menu_li">
-              <a class="menu_li_a current" href="contact.html">contact us</a>
+              <a class="current" href="contact.html">contact us</a>
             </li>
           </ul>
         </nav>
@@ -43,7 +43,7 @@
       <main class="content">
         <section id="title" class="article">
           <div class="img"></div>
-          <h1>contact</h1>
+          <h1>Contact <span>Us</span></h1>
         </section>
 
         <section id="contact-text" class="article">
@@ -92,7 +92,7 @@
         <ul>
           <li>9839 Lorem Ipsum</li>
           <li>India, Bangalore</li>
-          <li>Asia, indiA</li>
+          <li>Asia, india</li>
           <li>Telephone: +91 - 1234567890</li>
           <li>Email: contact@design3edge.com</li>
         </ul>
@@ -117,21 +117,21 @@
       </aside>
       <footer class="footer">
         <div class="main-footer">
-          <ul class="menu">
+          <ul id="menu">
             <li class="menu_li">
-              <a class="menu_li_a" href="index.html">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li class="menu_li">
-              <a class="menu_li_a" href="about.html">About us</a>
+              <a href="">About us</a>
             </li>
             <li class="menu_li">
-              <a class="menu_li_a" href="#solutions">solutions</a>
+              <a href="#solutions">solutions</a>
             </li>
             <li class="menu_li">
-              <a class="menu_li_a" href="clients.html">clients</a>
+              <a href="clients.html">clients</a>
             </li>
             <li class="menu_li">
-              <a class="menu_li_a last_boder" href="contact.html">contact us</a>
+              <a class="last current" href="contact.html">contact us</a>
             </li>
           </ul>
 
@@ -145,6 +145,7 @@
         </div>
       </footer>
     </div>
+    <!-- Menu mobil y current active -->
+    <script src="./js/menu.js"></script>
   </body>
-  <script src="/public/js/menu.js"></script>
 </html>

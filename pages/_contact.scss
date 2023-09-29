@@ -1,192 +1,75 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $gray-09;
-}
+// .container-2{
+//     @include container;
+//   }
+
+// .content {
+//     padding: 0px 5px 5px 0px;
+//     background-color: $white;
+
+//     #title  h1 {
+//         font-size: 22px;
+//         padding: 10px;
+//         color: $orange;
+//         font-family: $century;
+//         margin-top: -38px;
+//         padding-left: 60px;
+//         margin-bottom: 5px;
+//         border-bottom: 1px solid $gray-00;
+//     }
+
+//     .img {
+//         position: relative;
+//         top: -10px;
+//         background-image: url("/public/media/contactPage/contact.svg");
+//         height: 40px;
+//         background-repeat: no-repeat;
+//     }
+
+//     #title h1::first-letter {
+//         text-transform: capitalize;
+//     }
+
+//     #contact-text {
+//         p {
+//             font-size: 12px;
+//             line-height: 18px;
+//             color: $gray-07;
+//             font-family: $arial;
+//             margin: 5px 0px 10px 10px;
+//         }
+//     }
+// }
 
 
-.container-contact {
-    display: grid;
-    width: 90%;
-    gap: 1.6em;
-    background-color: $white;
-}
+// @include mobil {
+//     .content #form form input[type=text] {
+//         width: 180px;
+//         margin-right: 5%;
+//     }
 
-.header {
-    background-color: $gray-09;
-}
+//     .content #form form textarea {
+//         width: 200px;
+//         margin-right: 0%;
+//     }
 
-.content {
-    padding: 0px 5px 5px 0px;
-    background-color: $white;
+//     .content #form form input[type=submit] {
+//         margin-left: 42%;
+//     }
+// }
 
-    #title h1 {
-        font-size: 22px;
-        color: $orange;
-        font-family: $century;
-        margin-top: -38px;
-        padding-left: 60px;
-        margin-bottom: 5px;
-        border-bottom: 1px solid $gray-00;
+// @include tablet {
+//     .content #form form input[type=text] {
+//         width: 180px;
+//         margin-right: 30%;
+//     }
 
+//     .content #form form textarea {
+//         width: 200px;
+//         margin-right: 27%;
+//     }
 
-    }
+//     .content #form form input[type=submit] {
+//         margin-left: 35%;
+//     }
 
-    .img {
-        position: relative;
-        top: -10px;
-        background-image: url("/public/media/contactPage/contact.svg");
-        height: 40px;
-        background-repeat: no-repeat;
-    }
-
-    #title h1::first-letter {
-        text-transform: capitalize;
-    }
-
-    #contact-text {
-        p {
-            font-size: 12px;
-            line-height: 18px;
-            color: $gray-07;
-            font-family: $arial;
-            margin: 5px 0px 10px 10px;
-        }
-    }
-
-
-    #form {
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            label {
-                font-size: 12px;
-                line-height: 18px;
-                color: $gray-07;
-                padding: 15px;
-                font-weight: bold;
-                font-family: $arial;
-            }
-
-
-            input[type=text] {
-                width: 360px;
-                height: 26px;
-                float: right;
-                margin-right: 40%;
-                clear: both;
-                background-color: $gray-12;
-                border: 1px solid $gray-13;
-            }
-
-            textarea {
-                width: 422px;
-                height: 92px;
-                margin-right: 33%;
-                float: right;
-                background-color: $gray-12;
-                border: 1px solid $gray-13;
-                resize: none;
-            }
-
-            input[type=submit] {
-                margin-left: 30%;
-
-            }
-
-        }
-    }
-
-}
-
-.sidebar {
-    width: 90%;
-    background-color: $white;
-    padding-left: 10px;
-
-    h2 {
-        font-size: 19px;
-        color: $orange;
-        font-family: $century;
-        margin-bottom: 20px;
-        padding-bottom: 5px;
-        border-bottom: 1px solid $gray-00;
-    }
-
-
-
-    ul {
-        list-style: inside;
-
-        li {
-            font-size: 12px;
-            line-height: 18px;
-            color: $gray-11;
-            font-family: $arial;
-
-            &::marker {
-                color: $orange;
-            }
-
-        }
-    }
-
-    .testimonial {
-        font-size: 12px;
-        line-height: 18px;
-        color: $gray-07;
-        font-family: $arial;
-
-        h3 {
-            color: $gray-11;
-            padding-top: 10px;
-            font-weight: bold;
-            font-family: $arial;
-        }
-    }
-}
-
-.footer {
-    padding: 0px 20px 0px 20px;
-}
-
-
-
-@include mobil {
-    .content #form form input[type=text] {
-        width: 180px;
-        // margin-right: 0%; 
-        margin-right: 5%;
-    }
-
-    .content #form form textarea {
-        // width: 200px;
-        width: 200px;
-        ;
-        margin-right: 0%;
-    }
-
-    .content #form form input[type=submit] {
-        margin-left: 42%;
-    }
-}
-
-@include tablet {
-    .content #form form input[type=text] {
-        width: 180px;
-        margin-right: 30%;
-    }
-
-    .content #form form textarea {
-        width: 200px;
-        margin-right: 27%;
-    }
-
-    .content #form form input[type=submit] {
-        margin-left: 35%;
-    }
-
-}
+// }

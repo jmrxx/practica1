@@ -1,19 +1,79 @@
-@mixin mobil {
-     @media screen and (max-width: $mobil) {
-          @content;
+
+// Small devices
+@mixin sm {
+     @media (min-width: #{$screen-sm-min}) {
+         @content;
      }
-}
-
-@mixin tablet {
-     @media screen and (min-width: $mobil) and (max-width: $pc) {
-          @content;
+  }
+  
+  // Medium devices
+  @mixin md {
+     @media (min-width: #{$screen-md-min}) {
+         @content;
      }
-
-
-}
-
-@mixin pc {
-     @media screen and (min-width: $pc) {
-          @content;
+  }
+  
+  // Large devices
+  @mixin lg {
+     @media (min-width: #{$screen-lg-min}) {
+         @content;
      }
+  }
+  
+  // Extra large devices
+  @mixin xl {
+     @media (min-width: #{$screen-xl-min}) {
+         @content;
+     }
+  }
+
+
+
+
+
+//   for delete 
+
+
+
+// @mixin mobil {
+//      @media screen and (max-width: $mobil) {
+//           @content;
+//      }
+// }
+
+// @mixin tablet {
+//      // only screen and (min-width:321px) and (max-width:768px)
+//      @media screen and (min-width: $mobil) and (max-width: $pc) {
+//           @content;
+//      }
+
+
+// }
+
+// @mixin pc {
+//      @media screen and (min-width: $pc) {
+//           @content;
+//      }
+// }
+
+// @mixin body {
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      background-color: $gray-09;
+// }
+
+// @mixin container {
+//      width: 90%;
+//      display: grid;
+//      background-color: $gray-09;
+// }
+
+@mixin img ($size, $background: $white, $name) {
+     background-image: url("/public/media/#{$name}.svg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-color: $white;
+     background-size: cover;
+     overflow: hidden;
 }

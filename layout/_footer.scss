@@ -1,126 +1,55 @@
-.footer {
+// /* Style for PC and Tablet  */
+// .main-footer {
+//     @extend %flex-space-betwewen;
+//     border-top: 1px solid $heading;
+
+//     #menu {
+//         @extend %flex-space-betwewen;
+
+//         .menu_li {
+//             @extend %footer-text;
+//         }
+
+//         a {
+//             padding-right: 10px;
+//             color: $heading;
+//             border-right: 1px solid $heading;
+//         }
+
+//         a.current {
+//             color: $texto;
+//             font-weight: bold;
+//         }
+
+//         a.last {
+//             border-right: none;
+//         }
+
+//     }
+
+//     .footer-copy {
+//         p {
+//             @extend %footer-text;
+//         }
+
+//     }
+
+// }
+
+
+// @include mobil {
     .main-footer {
+        border-top: none;
         display: flex;
         flex-direction: column;
-        font-family: $arial;
 
-        .menu {
-            line-height: 50px;
+        #menu {
             display: flex;
             flex-direction: column;
 
-            .menu_li {
-                width: 79px;
-                height: 27px;
-
-                .menu_li_a {
-                    font-size: 11px;
-                    line-height: 18px;
-                    color: $gray-06;
-                    font-family: $arial;
-                    text-decoration: none;
-                    margin-bottom: 20px;
-                    border-radius: 2px;
-
-                    &:hover {
-                        color: $black;
-                    }
-                }
-
+            .menu_li a {
+                border-right: none;
             }
         }
     }
-
-    .footer-copy {
-        p {
-            margin: 1rem 0rem 2rem 0rem;
-            font-size: 12px;
-            line-height: 18px;
-            color: $gray-06;
-            font-family: $arial;
-        }
-    }
-
-}
-
-/* version tablet */
-
-@include tablet {
-    .footer {
-
-        .main-footer {
-            flex-direction: row;
-            justify-content: space-between;
-            border-top: 1px solid $gray-06;
-
-            .menu {
-                flex-direction: row;
-
-                .menu_li {
-                    width: 65px;
-                    font-size: 12px;
-
-                    .menu_li_a {
-                        padding-right: 10px;
-                        border-radius: 0px;
-                        border-right: 1px solid $gray-06;
-
-                    }
-
-                }
-
-                .menu_li_a.last_boder {
-                    border-right: none;
-                }
-
-            }
-
-            .footer-copy {
-                p {
-                    flex: 2;
-                }
-            }
-        }
-    }
-
-}
-
-@include pc {
-    .footer {
-
-        .main-footer {
-            flex-direction: row;
-            justify-content: space-between;
-            border-top: 1px solid $gray-06;
-
-            .menu {
-                flex-direction: row;
-
-                .menu_li {
-                    width: 65px;
-                    font-size: 12px;
-
-                    .menu_li_a {
-                        padding-right: 10px;
-                        border-radius: 0px;
-                        border-right: 1px solid $gray-06;
-
-                    }
-
-                }
-
-                .menu_li_a.last_boder {
-                    border-right: none;
-                }
-
-            }
-
-            .footer-copy {
-                p {
-                    flex: 2;
-                }
-            }
-        }
-    }
-
-}
+// }

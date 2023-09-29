@@ -1,0 +1,19 @@
+/* Century Gothic */
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('/public/fonts/font-letra/1105886371.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+/* Arial */
+  @font-face {
+    font-family: 'Arial';
+    src: url('/public/fonts/font-letra/arial.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  // fonts
+$arial : Arial;
+$century: Century Gothic;
