@@ -1,64 +1,74 @@
 // Estilos generales
 
-// .container{
-//   width: $width;
-//    display: grid;
-//    background-color: $gray-09;
-// }
+.container{
+  max-width: $width;
+   display: grid;
+   background-color: var(--bg-color-page);
+}
 
-// .main {
-//   width: 100%;
-// }
+.main {
+  width: 100%;
+}
 
-// .text-orange {
-//   color: $orange;
-// }
+
 
 // Estilos section design
-// .design {
-//   height: 420px;
-//   border-radius: 8px;
-//   filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
-//   background-image: url("/practica1_correcion_jose_mejia/practica1/public/media/slider.png");
-//   @include img(cover);
-// }
+.design {
+  width: 100%;
+  height: toRem(180);
+  border-radius: roRem(8);
+  filter: drop-shadow(1.06px -1.696px 2.5px rgba(234, 234, 234, 0.23));
+  background-image: url("/public/media/slider.png");
+  background-position:center top;
+  background-repeat: no-repeat;
+  resize: both;
+  overflow: scroll;
+  background-attachment: local;
+  //background-size: contain;
+  background-size: 100%;
+  
+}
 
 // Estilos section advance
-// .advance {
-//   border-bottom: 1px solid $gray-00;
-//   display: flex;
-//   padding: 14px;
-//   border-radius: 6px;
-//   flex-direction: column;
-//   background-color: #fff;
-//   overflow: hidden;
+.advance {
+  border-bottom: 1px solid var(--color-secundary);
+  display: flex;
+  padding: 14px;
+  border-radius: 6px;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
 
+   .advance-h1 {
+     line-height: toRem(18);
+     font-size: toRem(27);
+     color: var(--color-font-advance-text);
+     
+     .text-orange {
+      color: var( --color-primary);
+   }
+  }
 
-//   .advance-h2 {
-//     font-size: 4rem;
+  .title {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
 
-//   }
+  .description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 
-//   .title {
-//     font-size: 1.7rem;
-//     line-height: 2rem;
-//   }
+  .advance-btn {
+    align-self: flex-end;
+    padding: 5px;
 
-//   .description {
-//     font-size: 1.5rem;
-//     line-height: 2rem;
-//   }
+    a {
+      color: var(--card-avanced-title-color);
 
-//   .advance-btn {
-//     align-self: flex-end;
-//     padding: 5px;
-
-//     a {
-//       color: $gray-04;
-
-//     }
-//   }
-// }
+    }
+  }
+ }
 
 
 
@@ -530,7 +540,6 @@
 //       }
 //     }
 //   }
-
 
 //   .welcome {
 //     margin-right: 20px;
