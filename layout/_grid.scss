@@ -28,71 +28,89 @@
 #section4 {grid-area: section4;}
 
 
-// template cards
-.card {
-    grid-template-columns: 80px 1fr;
+// // template cards
+// .card {
+//     grid-template-columns: 80px 1fr;
+//     grid-template-rows: auto;
+//     grid-template-areas:
+//         "title title"
+//         "meta description";
+//}
+
+
+.container {
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "title title"
-        "meta description";
+        "header"
+        "design"
+        "advance"
+        "card1"
+        "card2"
+        "card3"
+        "welcome"
+        "suscribe"
+        "footer";
 }
-
 
 // contenido para la version movil
 // @include mobil {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "header"
-            "design"
-            "advance"
-            "card1"
-            "card2"
-            "card3"
-            "welcome"
-            "suscribe"
-            "footer";
-    }
 
 
-    /* contact page */
-    .container-2 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-            "header"
-            "main"
-            "sidebar"
-            "footer";
-    }
+
+    // /* contact page */
+    // .container-2 {
+    //     grid-template-columns: repeat(1, 1fr);
+    //     grid-template-rows: auto;
+    //     grid-template-areas:
+    //         "header"
+    //         "main"
+    //         "sidebar"
+    //         "footer";
+    // }
 
 
-    .clients {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:
-            "section1 "
-            "section2"
-            "section3 "
-            "section4";
-    }
+    // .clients {
+    //     grid-template-columns: repeat(1, 1fr);
+    //     grid-template-areas:
+    //         "section1 "
+    //         "section2"
+    //         "section3 "
+    //         "section4";
+    // }
 
 // }
 
 // contenido de tablet
 
-// @include tablet {
-//     .container {
-//         grid-template-columns: repeat(2, 1fr);
-//         grid-template-rows: auto;
-//         grid-template-areas:
-//             "header header"
-//             "design  advance"
-//             "card1 card2"
-//             "card3 suscribe"
-//             "welcome welcome"
-//             "footer footer";
-//     }
+@include md {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header header"
+            "design design advance advance"
+            "card1 card1  card2 card2"
+            "card3 card3 suscribe suscribe"
+            "welcome welcome welcome welcome"
+            "footer footer footer footer";
+    }
+}
+
+@include xl {
+    .container {
+        //grid de 12 1fr para pc
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header header header header"
+            "design design design advance advance advance"
+            "card1 card1 card2  card2 card3 card3"
+            "welcome welcome welcome welcome suscribe suscribe"
+            "footer footer footer footer footer footer";
+    }
+}
+
 
 //     /* contact page */
 //     .container-2 {
