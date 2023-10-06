@@ -1,11 +1,13 @@
-// .btn{
-//     // width: 100px;
-//     width: 91px;
-//     height: 24px;
-//     padding: toRem(5)  toRem(15);
-//     background-image: linear-gradient(0deg, #d4d3d3 0%, #e9e9e9 100%);
-//     border-radius: 40px;
-//     border: none;
-//     color: $gray-04;
-//     border: 1px solid $gray-08;
-// }
+.btn{
+    // width: 100px;
+    width: toRem(91);
+    height: toRem(24);
+    padding: toRem(5)  toRem(15);
+    background-image: var(--bg-color-btn-grandient);
+    border-radius: roRem(40);
+    border: none;
+    font-family: var(--font-family-secundary);
+    color: var(--gray-10);
+    font-size: toRem(12);
+    border: 1px solid var(--gray-08);
+}
