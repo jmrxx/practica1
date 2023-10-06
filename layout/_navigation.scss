@@ -3,10 +3,10 @@
 // styles navbar general
 .nav {
     .navbar {
-        position: absolute;
-        top: roRem(20);
-
         #btn {
+            z-index: 999;
+            color: var(--color-primary);
+            font-weight: 100;
             .icon-menu:before {
                 content: "\e9bd";
             }
@@ -25,13 +25,16 @@
 
 
 .nav {
-    width: toRem(100);
     .navbar {
         display: flex;
         align-items: center;
         position: initial;
         padding: 1rem;
         font-size: 1.2rem;
+    
+         .text-orange{
+                color: var(--color-primary);
+            }
     }
 
      #menu {
@@ -40,7 +43,7 @@
         align-items: center;
         background-color: var(--color-secundary);
         position: absolute;
-        top: toRem(50);
+        top: 0;
         width: 100%;
         transform: translateX(-100%);
         z-index: 1;
@@ -90,30 +93,7 @@
                     color: var(--color-text-nav);
                 }
             }
-
-
         }
     }
 
-
-
-
-// @include tablet {
-//     .nav {
-//         .navbar {
-//             #btn {
-//                 display: none;
-//             }
-//         }
-//     }
-// }
-
-// @include pc {
-//     .nav {
-//         .navbar {
-//             #btn {
-//                 display: none;
-//             }
-//         }
-//     }
-// }
+@include hideMenu();
