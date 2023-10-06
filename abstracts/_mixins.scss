@@ -28,33 +28,30 @@
   }
 
 
+// hamburger menu hide
+@mixin hideMenu (){
+    // for the PC
+    @include xl {
+        .nav {
+            .navbar {
+                #btn {
+                    display: none;
+                }
+            }
+        }
+    }
 
-
-
-//   for delete 
-
-
-
-// @mixin mobil {
-//      @media screen and (max-width: $mobil) {
-//           @content;
-//      }
-// }
-
-// @mixin tablet {
-//      // only screen and (min-width:321px) and (max-width:768px)
-//      @media screen and (min-width: $mobil) and (max-width: $pc) {
-//           @content;
-//      }
-
-
-// }
-
-// @mixin pc {
-//      @media screen and (min-width: $pc) {
-//           @content;
-//      }
-// }
+    // for the tablet
+    @include md {
+        .nav {
+            .navbar {
+                #btn {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
 // @mixin body {
 //      display: flex;
